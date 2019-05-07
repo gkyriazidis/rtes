@@ -1,3 +1,13 @@
+/*
+ * File:  test.c
+ * --------------------
+ * exectutes 'program' and monitors its resource usage
+ *
+ * run on bash: 'test <index: integer> <t: float> <dt: float>'
+ * 	(see on 'program.c' for parameters description)
+ *
+ */
+
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>

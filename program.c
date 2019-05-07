@@ -1,3 +1,17 @@
+/*
+ * File:  program.c
+ * --------------------
+ * Sampling of gettimeofday() based on two algorithms (system interrupts(0) and process sleep(1)).
+ *
+ * run on bash: 'program <index: integer> <t: float> <dt: float>'
+ *		- index: Selecting algorithm by index (0 or 1)
+ *		- t:     Total period of sampling
+ *		- dt:    Sampling interval
+ *
+ * run through 'test' executable
+ *	(see on 'test.c' for extra parameters description)
+ */
+
 #include <signal.h>
 #include <unistd.h>
 #include <stdio.h>
